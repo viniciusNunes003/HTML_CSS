@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositicos diferentes ou simplesmente
+        aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img_m.png" type="image/png">
+        <img src="imagens/img_g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Daytime Forrest Bonfire.mp3" controls autoplay loop></audio>
+    <!-- Formatos aceitos MP3 WAV OGG | Outra maneira abaixo -->
+     <audio preload="metadata">
+        <source src="midia/Daytime Forrest Bonfire.mp3" type="audio/mpeg">
+        <source src="midia/Daytime Forrest Bonfire.ogg" type="audio/ogg">
+        <source src="midia/Daytime Forrest Bonfire.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Daytime Forrest Bonfire.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+     </audio>
+</body>
+</html>

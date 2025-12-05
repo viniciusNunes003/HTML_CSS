@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'DroidBrabo';
+    src: url(../fontes/idroid.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    padding: 15px 30px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #2cbb6a,#145530 ) ;
+}
+
+header > h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+main strong {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000000;
+    background-color: #b9ffd7;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #044d24;
+    background-color: #74ffb0;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: #54d48b;
+    transition-duration: 0.1s;
+}
+
+header > p {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2px 0px;
+    text-align: center;
+    padding: 5px 10px;
+    text-shadow: -3px 5px #0000002e;
+}
+
+header > p, header > h1 {
+    color: azure;
+    text-shadow: -3px 5px #0000002e;
+}
+
+body {
+    background-color: #145530;
+}
+
+a.externo::after {
+    content: '\00A0\1F517'
+}
+
+main > p {
+    margin: 15px 0px 0px 0px;
+    text-align: justify;
+    padding: 0px 15px;
+    line-height: 1.4em;
+}
+
+main {
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+}
+
+main > nav {
+    background-color: #309b5f;
+    padding: 5px;
+}
+
+main > nav > button {
+    background-color: #309b5f;
+    margin: 0px 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+main > nav > button:hover {
+    background-color: #044d24;
+    transition: all 0.5s ease-in-out;
+}
+
+#main_title, .other_titles {
+    font-family: 'DroidBrabo';
+    font-weight: normal;
+}
+
+.other_titles {
+    background-image: linear-gradient(to right, #74ffb0, transparent);
+    padding: 0px 10px;
+}
+
+#main_title {
+    color: #145530;
+    text-align: center;
+}
+
+@media (max-width: 680px) {
+    main > picture > img, main > img {
+        margin: auto;
+        max-width: 350px;
+        display: block;
+    }
+}
+
+.video {
+    background-color: #145530;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #00ff6a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: #000000;
+    box-shadow: -4px 4px 6px 0px #a1a1a1;
+}
+
+aside ul {
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside  h3 {
+    background-color: #044d24;
+    color: white;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+    background-color: #044d24;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
